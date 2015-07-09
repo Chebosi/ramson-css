@@ -1,0 +1,76 @@
+
+body{ word-wrap: break-word; 
+	  background-image: url('images/baby.jpg');
+	  background-size: 80% 70%;
+	  background-repeat: space;
+	  background-position: 20% 20%;
+	  background-attachment: fixed;
+	}
+
+p::selection{
+	background-color: black;
+	color: white;
+}
+
+p::first-line{
+	color:blue;
+	
+}
+
+@font-face {
+font-family: ChunkFive;
+src: local('ChunkFive'), url('/chunk/webfonts/Chunkfive-webfont.woff') format('woff');
+}
+
+h1.webfont { font-family: ChunkFive, sans-serif; }
+.shadows h1 {
+    text-shadow: -7px -6px 40px blue;
+}
+
+h2{ text-shadow: 3px 3px 4px #BBB;}
+.one { text-shadow: -3px -3px #BBB; }
+.two { text-shadow: -5px 3px #BBB; }
+.three { text-shadow: -5px 0 #BBB; }
+
+.flag1{
+	background-color:black;
+	height:60px; 
+	border:3px solid inherit;
+}
+.flag2{
+	background-color:white;
+	height:5px; 
+	border:1px solid white;
+	color:white;
+}
+.flag3{
+	background-color:red;
+	height:60px; 
+	border:3px solid red;
+	color:red;
+}
+
+.flag4{
+	background-color:green;
+	height:60px; 
+	border:3px solid green;
+	color:green;
+}
+
+.flag p{
+	margin: 0px;
+	border-collapse: collapse;
+	color: inherit;
+}
+.resizing {
+overflow: hidden;
+resize: both;
+border: 2px solid gray;
+width: 400px;
+}
+.columns {
+text-align: right;
+-webkit-column-width: 150px;
+width: 710px; 
+
+}
